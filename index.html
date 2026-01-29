@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>K S Tharun Kumar - Portfolio</title>
-  <meta name="description" content="Portfolio of K S Tharun Kumar — AI & ML, Cloud, Computer Vision, Generative AI" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K S Tharun Kumar | AI & ML Engineer</title>
+  <meta name="description" content="AI & ML Engineer with experience in Cloud, Computer Vision, Agentic AI, and scalable data-driven systems."/>
 
   <style>
     :root{
@@ -14,10 +14,8 @@
       --card:#ffffff;
       --bg:#f4f8ff;
     }
-
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-
     body{
       margin:0;
       font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
@@ -25,160 +23,96 @@
       color:#0f172a;
     }
 
-    /* ---------- HEADER ---------- */
     header{
       background:linear-gradient(90deg,var(--primary),var(--accent));
       color:white;
-      padding:42px 20px;
+      padding:52px 20px;
       text-align:center;
-      animation:fadeDown 1s ease;
     }
+    header h1{margin:0;font-size:36px}
+    header p{margin-top:8px;font-size:17px;opacity:0.95}
 
-    header h1{margin:0;font-size:34px}
-    header p{margin-top:6px;font-size:16px;opacity:0.95}
-
-    /* ---------- LAYOUT ---------- */
     .wrap{
-      max-width:1100px;
-      margin:32px auto;
+      max-width:1150px;
+      margin:36px auto;
       padding:0 20px;
       display:grid;
-      grid-template-columns:320px 1fr;
-      gap:24px;
+      grid-template-columns:330px 1fr;
+      gap:26px;
     }
 
     .card{
       background:var(--card);
-      padding:20px;
+      padding:22px;
       border-radius:14px;
-      box-shadow:0 10px 30px rgba(10,61,145,0.08);
-      opacity:0;
-      transform:translateY(30px);
-      animation:fadeUp 0.9s ease forwards;
+      box-shadow:0 12px 32px rgba(10,61,145,0.1);
+      transition:0.35s ease;
     }
-
     .card:hover{
       transform:translateY(-6px);
-      box-shadow:0 14px 40px rgba(10,61,145,0.15);
-      transition:0.3s ease;
+      box-shadow:0 18px 44px rgba(10,61,145,0.16);
     }
 
-    .left h3, .right h2{margin-top:0}
-
-    /* ---------- CONTACT ---------- */
     .contact a{
       display:block;
-      text-decoration:none;
       color:var(--primary);
+      text-decoration:none;
       font-weight:600;
       margin-bottom:8px;
     }
 
     .download{
       display:inline-block;
-      margin-top:12px;
+      margin-top:14px;
       background:var(--primary);
       color:white;
-      padding:10px 16px;
+      padding:12px 18px;
       border-radius:10px;
       text-decoration:none;
       font-weight:600;
-      transition:0.3s ease;
     }
+    .download:hover{background:var(--accent)}
 
-    .download:hover{
-      background:var(--accent);
-      transform:scale(1.05);
-    }
-
-    /* ---------- TECH STACK ---------- */
     .tech-grid{
       display:flex;
       flex-wrap:wrap;
       gap:10px;
       margin-top:10px;
     }
-
     .tech{
-      display:flex;
-      align-items:center;
-      gap:8px;
       padding:6px 12px;
+      background:#eef4ff;
       border-radius:10px;
-      background:#f1f7ff;
-      border:1px solid rgba(10,61,145,0.08);
       font-size:14px;
-      transition:0.3s ease;
+      font-weight:500;
     }
 
-    .tech:hover{
-      background:#e6f0ff;
-      transform:translateY(-4px);
-    }
-
-    .tech img{width:20px;height:20px}
-
-    /* ---------- PROJECTS ---------- */
     .project{
       display:flex;
-      gap:14px;
-      margin-bottom:18px;
-      transition:0.3s ease;
+      gap:16px;
+      margin-bottom:20px;
     }
-
-    .project:hover{
-      transform:translateX(6px);
-    }
-
     .thumb{
       width:120px;
       height:80px;
-      background:#eef4ff;
+      background:#eaf1ff;
       border-radius:10px;
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:12px;
-      color:var(--muted);
       font-weight:600;
-    }
-
-    .stats{
-      display:flex;
-      gap:10px;
-      margin-top:8px;
-    }
-
-    .stat{
-      background:#f8fafc;
-      padding:8px 10px;
-      border-radius:8px;
-      border:1px solid rgba(10,61,145,0.06);
-      font-size:13px;
-      text-align:center;
+      color:#475569;
     }
 
     footer{
       text-align:center;
       color:var(--muted);
-      margin:30px 0;
+      margin:36px 0;
       font-size:14px;
     }
 
-    /* ---------- ANIMATIONS ---------- */
-    @keyframes fadeUp{
-      to{opacity:1;transform:translateY(0)}
-    }
-
-    @keyframes fadeDown{
-      from{opacity:0;transform:translateY(-30px)}
-      to{opacity:1;transform:translateY(0)}
-    }
-
-    /* ---------- RESPONSIVE ---------- */
-    @media(max-width:880px){
+    @media(max-width:900px){
       .wrap{grid-template-columns:1fr}
-      .left{order:2}
     }
   </style>
 </head>
@@ -187,13 +121,13 @@
 
 <header>
   <h1>K S Tharun Kumar</h1>
-  <p>AI & ML Engineer • Cloud • Computer Vision • Generative AI</p>
+  <p>AI & ML Engineer • Cloud • Computer Vision • Agentic AI</p>
 </header>
 
 <div class="wrap">
 
   <!-- LEFT -->
-  <div class="left">
+  <div>
     <div class="card contact">
       <h3>Contact</h3>
       <a href="mailto:kstharun578@gmail.com">kstharun578@gmail.com</a>
@@ -207,37 +141,48 @@
     </div>
 
     <div class="card">
-      <h3>Tech Stack</h3>
+      <h3>Technical Skills</h3>
       <div class="tech-grid">
-        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">Python</div>
-        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg">TensorFlow</div>
-        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg">OpenCV</div>
-        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg">AWS</div>
-        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">GCP</div>
-        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">Git</div>
+        <div class="tech">Python (Advanced)</div>
+        <div class="tech">SQL</div>
+        <div class="tech">Java</div>
+        <div class="tech">TensorFlow</div>
+        <div class="tech">Scikit-learn</div>
+        <div class="tech">OpenCV</div>
+        <div class="tech">MongoDB</div>
+        <div class="tech">AWS</div>
+        <div class="tech">Google Cloud (Vertex AI)</div>
+        <div class="tech">Firebase</div>
+        <div class="tech">Salesforce Dev</div>
       </div>
     </div>
 
     <div class="card">
-      <h3>Achievements</h3>
+      <h3>Leadership & Achievements</h3>
       <ul>
         <li>AWS Game Builder Challenge 2024 — Finalist</li>
-        <li>Synapse National Hackathon</li>
-        <li>Samartha National Hackathon</li>
-        <li>AWS Cloud Club — Coordinator</li>
+        <li>Google Cloud Agentic AI Day — Participant</li>
+        <li>AWS Cloud Club — Student Coordinator</li>
+        <li>Organizer — AI & ML Bootcamp (200+ students)</li>
       </ul>
     </div>
   </div>
 
   <!-- RIGHT -->
-  <div class="right">
+  <div>
 
     <div class="card">
-      <h2>About</h2>
+      <h2>About Me</h2>
       <p>
-        Third-year B.Tech (AI & ML) student at Mohan Babu University.
-        I build practical AI systems with a strong focus on real-world impact,
-        cloud deployment, and scalability.
+        I am a third-year B.Tech student specializing in Artificial Intelligence & Machine Learning at Mohan Babu University,
+        with a strong interest in building scalable, data-driven systems using AI and cloud platforms.
+        I have hands-on experience developing deep learning and computer vision solutions,
+        integrating them with AWS and Google Cloud, and working on real-world datasets.
+      </p>
+      <p>
+        Through internships at Salesforce (AgentBlazer), Infosys Springboard, and EI Systems,
+        I have gained exposure to enterprise workflows, predictive modeling, and deployment pipelines.
+        I enjoy working on high-impact AI systems and collaborating in fast-paced engineering environments.
       </p>
     </div>
 
@@ -245,39 +190,27 @@
       <h2>Projects</h2>
 
       <div class="project">
-        <div class="thumb">Project<br>Kisan</div>
+        <div class="thumb">Project Kisan</div>
         <div>
-          <h4>Project Kisan — AI Farming Assistant</h4>
-          <p>Multilingual AI assistant using Vertex AI & Firebase.</p>
-          <div class="stats">
-            <div class="stat">Vertex AI</div>
-            <div class="stat">Firebase</div>
-            <div class="stat">Python</div>
-          </div>
+          <h4>Project Kisan — Agentic AI Assistant</h4>
+          <p>Multilingual AI assistant built with Vertex AI & Firebase for crop disease diagnosis,
+             market price analysis, and government scheme guidance.</p>
         </div>
       </div>
 
       <div class="project">
-        <div class="thumb">Garbage<br>CNN</div>
+        <div class="thumb">Garbage CNN</div>
         <div>
-          <h4>Garbage Classification</h4>
-          <p>CNN-based classifier with 92% accuracy.</p>
+          <h4>Garbage Classification System</h4>
+          <p>CNN-based waste classifier achieving 92% accuracy using TensorFlow and OpenCV.</p>
         </div>
       </div>
 
       <div class="project">
-        <div class="thumb">Face<br>Rec</div>
-        <div>
-          <h4>Face Recognition</h4>
-          <p>Real-time recognition using OpenCV & LBPH.</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="thumb">Emotion</div>
+        <div class="thumb">FER</div>
         <div>
           <h4>Facial Expression Recognition</h4>
-          <p>FER-2013 CNN model achieving 88% accuracy.</p>
+          <p>CNN trained on FER-2013 achieving 88% accuracy across seven emotion classes.</p>
         </div>
       </div>
 
@@ -287,7 +220,7 @@
 </div>
 
 <footer>
-  © 2025 K S Tharun Kumar — AI • ML • Cloud
+  © 2025 K S Tharun Kumar • AI • ML • Cloud • Data Systems
 </footer>
 
 </body>
